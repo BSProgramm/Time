@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_height="match_parent"
+            android:text="04:20"
+            android:id="@+id/tvTime"
+            android:gravity="center_vertical"
+            android:textColor="?attr/textColorAlertDialogListItem"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:layout_width="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll"
+            android:layout_toRightOf="@+id/png">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ZANYATIE"
+                android:id="@+id/tvMain"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/textColorAlertDialogListItem"
+                android:paddingTop="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvDesc"
+                android:layout_weight="0.7"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="?attr/textColorAlertDialogListItem"
+                android:layout_marginRight="18dp"
+                android:maxLines="2"
+                android:text="dop" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/png"
+            android:src="@mipmap/it"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvTime"
+            android:layout_toEndOf="@+id/tvTime"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+</LinearLayout>
